@@ -81,7 +81,9 @@ export default function About({ autoPlay = true, delay = 6000 }: AboutProps) {
         timerRef.current = setInterval(() => {
             setIndex((i: number) => (i + 1) % slides.length);
         }, delay);
-        return () => clearInterval(timerRef.current);
+        return () => {
+            if (timerRef.current) clearInterval(timerRef.current);
+        };
     }, [autoPlay, delay]);
 
     const goTo = (i: number) => {

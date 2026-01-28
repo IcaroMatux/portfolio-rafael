@@ -3,7 +3,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
 import './i18n/i18nity.js';
-import ScrollToTop from './components/scrollToTop';
 import Navbar from './components/navbar';
 import HeroSection from './components/herosection';
 
