@@ -1,0 +1,85 @@
+
+/* Estilo para as setas de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #c1121f !important;
+    /* Cor verde do meu site */
+    transform: scale(0.8);
+    /* Diminui um pouco o tamanho das setas */
+    top: 50% !important;
+    /* Garante que elas fiquem centralizadas na vertical */
+    transition: color 0.3s ease;
+    /* Adiciona uma transição suave para a cor */
+}
+
+/* Efeito de hover nas setas */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: #c1121f !important;
+
+}
+
+/* Estilo para as setas desabilitadas */
+.swiper-button-disabled {
+    opacity: 0.35 !important;
+    cursor: auto !important;
+    pointer-events: none !important;
+}
+
+
+
+/* Estilo para os "dots" inativos da paginação */
+.swiper-pagination-bullet {
+    width: 40px;
+    
+    /* Largura para criar uma forma de barrinha */
+    height: 6px;
+    /* Altura da barrinha */
+    border-radius: 3px;
+    /* Bordas levemente arredondadas */
+    background-color: #A6A6A6;
+    /* Cor para os dots inativos */
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    /* Transição suave para mudanças de cor e tamanho */
+}
+
+/* Estilo para o "dot" ativo da paginação */
+.swiper-pagination-bullet-active {
+    width: 40px;
+    /* Deixa a barrinha ativa mais longa para destaque */
+    background-color: #c1121f;
+    /* Cor principal do seu tema */
+    opacity: 1;
+}
+
+/* Ajusta o espaçamento entre os dots */
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+}
+
+/* Adiciona espaçamento na parte inferior da paginação */
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -4px !important;
+    /* Ajuste este valor conforme necessário para o espaçamento desejado */
+}
+
+@media (max-width: 768px) {
+    .animated-gradient-border::before,
+    .animated-gradient-border::after {
+        display: none !important;
+    }
+
+    .animated-gradient-border {
+        background: transparent !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 16px !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+}
+
+/* Ajuste específico para o carrossel de acomodação para dar respiro aos dots */
+.accommodation-swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -35px !important;
+}

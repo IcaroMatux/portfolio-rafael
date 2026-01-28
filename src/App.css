@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+
+.animated-gradient-border {
+  position: relative;
+  border-radius: 1.25rem; 
+  overflow: hidden;
+  padding: 1px; /* The border width */
+  height: 100%; /* Ensure it takes full height of the slide */
+}
+
+.animated-gradient-border::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%; /* Make it larger to avoid hard edges on rotation */
+  height: 150%;
+  background: conic-gradient(
+    from var(--angle),
+    transparent 0%,
+    transparent 75%,
+    #c1121f 95%,
+    transparent 100%
+  );
+  animation: rotate 5s linear infinite;
+  pointer-events: none;
+}
+
+.animated-gradient-border-inner {
+  background-color: #1A1A1A; /* From original card background */
+  border-radius: inherit; /* Match parent's border-radius */
+  padding: 2rem; /* p-8 */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

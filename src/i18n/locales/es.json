@@ -1,0 +1,235 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "model": "Modelo",
+    "design": "Diseño",
+    "aesthetic": "Estética",
+    "accommodation": "Alojamiento",
+    "contact": "Contacto",
+    "languageLabel": "Idioma:"
+  },
+  "hero": {
+    "titlePrefix": "Estética,",
+    "typewriter": [
+      "Experiencia",
+      "Diseño",
+      "Creatividad"
+    ],
+    "titleSuffix": "& Arte",
+    "description": "Donde la sofisticación se encuentra con la profesionalidad. Cada proyecto es una expresión de cuidado y excelencia.",
+    "buttons": {
+      "portfolio": "Ver Portafolio",
+      "contact": "Contacto"
+    }
+  },
+  "about": {
+    "slides": [
+      {
+        "title": "Rafael Miranda",
+        "subtitle": "Imagen, Estética y Experiencia.",
+        "text": "Rafael trabaja de forma multidisciplinar uniendo imagen personal, diseño y estética en todo lo que hace. Su trabajo se guía por la atención al detalle, el cuidado en la presentación y la creación de experiencias visuales y humanas memorables. Más que servicios, entrega presencia, identidad y confort, siempre con una mirada moderna y profesional.",
+        "ctaLabel": "Ver Portafolio"
+      },
+      {
+        "title": "Modelo & Imagen Personal",
+        "subtitle": "Presencia, estética y autenticidad.",
+        "text": "Como modelo, Rafael trabaja la imagen de forma consciente y estratégica. Cada sesión está diseñada para transmitir identidad, estilo y profesionalidad, explorando la estética, la postura y la expresión. Su enfoque va más allá de la apariencia: se trata de comunicar confianza y personalidad en cada detalle visual.",
+        "ctaLabel": "Ver Sesiones"
+      },
+      {
+        "title": "Diseño & Creatividad",
+        "subtitle": "Visuales que comunican y conectan.",
+        "text": "En diseño, Rafael transforma ideas en soluciones visuales claras, modernas y funcionales. Centrándose en la estética, la organización y la experiencia del usuario, sus proyectos combinan creatividad y estrategia para fortalecer marcas, imágenes personales y presentaciones visuales de alto nivel.",
+        "ctaLabel": "Ver Proyectos"
+      },
+      {
+        "title": "Estética & Presentación",
+        "subtitle": "Cuidado en cada detalle.",
+        "text": "La estética es un pilar central del trabajo de Rafael. Desde la imagen personal hasta el ambiente y la presentación visual, todo está pensado para transmitir armonía, sofisticación y bienestar. Sus conocimientos en estética complementan sus roles como modelo, diseñador y anfitrión.",
+        "ctaLabel": "Saber Más"
+      },
+      {
+        "title": "Alojamiento & Experiencia",
+        "subtitle": "Confort, cuidado y hospitalidad.",
+        "text": "Más allá de las áreas creativas, Rafael ofrece el alojamiento como una experiencia completa. El espacio está diseñado para proporcionar confort, organización y bienestar, siempre con atención a los detalles y cuidado con cada persona recibida. Más que un lugar para quedarse, una experiencia acogedora.",
+        "ctaLabel": "Ver Alojamiento"
+      }
+    ]
+  },
+  "model": {
+    "title": "Modelo",
+    "description": "Editorial, estilo de vida y retratos que capturan la esencia de la elegancia contemporánea.",
+    "button": "Ver Trabajos",
+    "gallery": [
+      {
+        "title": "Estilo Urbano",
+        "category": "Estilo de Vida"
+      },
+      {
+        "title": "Retrato Clásico",
+        "category": "Estudio"
+      },
+      {
+        "title": "Editorial Moderno",
+        "category": "Editorial"
+      },
+      {
+        "title": "Elegancia Moderna",
+        "category": "Comercial"
+      },
+      {
+        "title": "Moda Urbana",
+        "category": "Urbano"
+      },
+      {
+        "title": "Expresión Cruda",
+        "category": "Exterior"
+      }
+    ]
+  },
+  "accommodation": {
+    "title": "Experiencia y Confort",
+    "description": "Ofrezco alojamientos cómodos y bien ubicados para asegurar que su estancia sea placentera y conveniente. Con atención a los detalles y un toque personal, me aseguro de que cada huésped se sienta como en casa.",
+    "amenities": {
+      "wifi": "Wi-Fi Gratis",
+      "payment": "Pago Flexible",
+      "location": "Ubicación Céntrica",
+      "reviews": "Reseñas de 5 Estrellas"
+    },
+    "differentials": {
+      "title": "Diferenciales",
+      "items": [
+        "Apartamento completo con diseño moderno y muebles de calidad",
+        "Check-in flexible y comunicación atenta durante toda la estancia",
+        "Guía personalizada con consejos locales y experiencias recomendadas"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Hablemos",
+    "description": "¿Interesado en trabajar juntos? Ya sea para modelaje, diseño, consultoría de imagen o alojamiento — póngase en contacto y creemos algo extraordinario.",
+    "social": {
+      "connect": "Haz clic para conectar"
+    },
+    "form": {
+      "nameLabel": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "subjectLabel": "Asunto",
+      "subjectDefault": "Selecciona un asunto",
+      "subjects": {
+        "model": "Trabajo de Modelo",
+        "design": "Proyecto de Diseño",
+        "consulting": "Consultoría de Imagen",
+        "hosting": "Reserva de Alojamiento",
+        "other": "Otro Asunto"
+      },
+      "messageLabel": "Mensaje",
+      "messagePlaceholder": "Cuéntame más sobre tu proyecto o interés...",
+      "submitSending": "Enviando...",
+      "submitDefault": "Enviar Mensaje"
+    },
+    "toast": {
+      "success": "¡Mensaje enviado! Me pondré en contacto pronto.",
+      "error": "Error al enviar el mensaje. Por favor, inténtelo de nuevo."
+    }
+  },
+  "aesthetic": {
+    "title": "Estética & Imagen Personal",
+    "description": "La experiencia como modelo y diseñador me dio una visión única sobre la imagen y la presentación visual. Ofrezco consultoría especializada para aquellos que buscan elevar su presencia personal y profesional.",
+    "services": [
+      {
+        "title": "Consultoría de Imagen",
+        "description": "Análisis estratégico para alinear su apariencia con sus objetivos personales y profesionales, transmitiendo confianza."
+      },
+      {
+        "title": "Dirección Creativa",
+        "description": "Concepción visual y dirección de arte para sesiones de fotos, editoriales y proyectos de marca centrados en la estética."
+      },
+      {
+        "title": "Estilismo & Producción",
+        "description": "Curación de looks y producción de moda completa para garantizar una estética impecable para cualquier ocasión o producción."
+      },
+      {
+        "title": "Posicionamiento Visual",
+        "description": "Estrategias estéticas para fortalecer su presencia digital y autoridad en el mercado a través de una imagen coherente."
+      },
+      {
+        "title": "Análisis Facial",
+        "description": "Estudio detallado de rasgos y proporciones para realzar su belleza natural con las elecciones de estilo adecuadas."
+      },
+      {
+        "title": "Curación de Lujo",
+        "description": "Selección exclusiva de piezas y accesorios de alta gama para componer un look refinado, sofisticado y atemporal."
+      }
+    ]
+  },
+  "design": {
+    "title": "Diseño",
+    "description": "Proyectos que combinan una estética sofisticada con funcionalidad y un propósito claro.",
+    "labels": {
+      "objective": "Objetivo:",
+      "solution": "Solución:",
+      "result": "Resultado:"
+    },
+    "buttons": {
+      "viewAll": "Ver Todos los Proyectos",
+      "viewLess": "Ver Menos Proyectos"
+    },
+    "projects": [
+      {
+        "title": "Identidad de Marca - Luxe Studio",
+        "category": "Branding",
+        "objective": "Crear una identidad visual premium que transmita elegancia y exclusividad.",
+        "solution": "Branding sofisticado con tipografía refinada y estética lujosa.",
+        "result": "Marca posicionada en el segmento de alta gama."
+      },
+      {
+        "title": "Sitio Web - Estúdio PM",
+        "category": "Diseño Web",
+        "objective": "Reposicionar el estudio digitalmente con una presencia moderna y sofisticada.",
+        "solution": "Rediseño del sitio institucional centrado en la estética, los proyectos y la experiencia visual.",
+        "result": "Marca más valorada, mayor compromiso y aumento del tiempo de permanencia."
+      },
+      {
+        "title": "Identidad de Trabajo - Instalador de Puertas",
+        "category": "Digital",
+        "objective": "Profesionalizar la imagen de la marca en el entorno digital.",
+        "solution": "Identidad visual consistente aplicada al contenido de las redes sociales.",
+        "result": "Mayor reconocimiento de la marca y crecimiento de la interacción orgánica."
+      },
+      {
+        "title": "Elenice Miranda – Diseñadora de Uñas",
+        "category": "Identidad Visual",
+        "objective": "Crear una marca elegante y femenina para el posicionamiento profesional.",
+        "solution": "Identidad visual sofisticada con un símbolo delicado y tipografía premium.",
+        "result": "Marca fuerte y bien posicionada en el mercado de la belleza."
+      },
+      {
+        "title": "Día Internacional de la Danza",
+        "category": "Diseño de Redes Sociales",
+        "objective": "Crear una tarjeta conmemorativa para celebrar el Día Internacional de la Danza.",
+        "solution": "Diseño visual expresivo centrado en el movimiento, el equilibrio y la identidad artística.",
+        "result": "Contenido atractivo con alto impacto visual y compromiso orgánico."
+      },
+      {
+        "title": "Dmdlicias Personalizados",
+        "category": "Branding & Diseño Digital",
+        "objective": "Crear una identidad visual llamativa para productos personalizados.",
+        "solution": "Branding vibrante con colores fuertes y un lenguaje visual accesible.",
+        "result": "Marca reconocible y mayor conexión con el público."
+      }
+    ]
+  },
+  "footer": {
+    "description": "¿Interesado en trabajar juntos? Ya sea para modelaje, diseño, consultoría de imagen o alojamiento — póngase en contacto y creemos algo extraordinario.",
+    "navigation": "Navegación",
+    "contact": "Contacto",
+    "social": "Social",
+    "copyright": "Copyright © {{year}} Rafael Miranda. Todos los derechos reservados.",
+    "backToTop": "Volver arriba",
+    "location": "Brasilia, Brasil"
+  }
+}

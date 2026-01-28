@@ -1,0 +1,235 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "model": "Model",
+    "design": "Design",
+    "aesthetic": "Aesthetics",
+    "accommodation": "Accommodation",
+    "contact": "Contact",
+    "languageLabel": "Language:"
+  },
+  "hero": {
+    "titlePrefix": "Aesthetics,",
+    "typewriter": [
+      "Experience",
+      "Design",
+      "Creativity"
+    ],
+    "titleSuffix": "& Art",
+    "description": "Where sophistication meets professionalism. Each project is an expression of care and excellence.",
+    "buttons": {
+      "portfolio": "View Portfolio",
+      "contact": "Contact"
+    }
+  },
+  "about": {
+    "slides": [
+      {
+        "title": "Rafael Miranda",
+        "subtitle": "Image, Aesthetics and Experience.",
+        "text": "Rafael works in a multidisciplinary way uniting personal image, design and aesthetics in everything he does. His work is guided by attention to detail, care with presentation and creation of remarkable visual and human experiences. More than services, he delivers presence, identity and comfort, always with a modern and professional look.",
+        "ctaLabel": "View Portfolio"
+      },
+      {
+        "title": "Model & Personal Image",
+        "subtitle": "Presence, aesthetics and authenticity.",
+        "text": "As a model, Rafael works on image consciously and strategically. Each shoot is designed to convey identity, style and professionalism, exploring aesthetics, posture and expression. His focus goes beyond appearance: it's about communicating confidence and personality in every visual detail.",
+        "ctaLabel": "View Shoots"
+      },
+      {
+        "title": "Design & Creativity",
+        "subtitle": "Visuals that communicate and connect.",
+        "text": "In design, Rafael transforms ideas into clear, modern and functional visual solutions. Focusing on aesthetics, organization and user experience, his projects combine creativity and strategy to strengthen brands, personal images and high-level visual presentations.",
+        "ctaLabel": "View Projects"
+      },
+      {
+        "title": "Aesthetics & Presentation",
+        "subtitle": "Care with every detail.",
+        "text": "Aesthetics is a central pillar of Rafael's work. From personal image to setting and visual presentation, everything is thought out to convey harmony, sophistication and well-being. His knowledge in aesthetics complements his roles as model, designer and host.",
+        "ctaLabel": "Learn More"
+      },
+      {
+        "title": "Hosting & Experience",
+        "subtitle": "Comfort, care and hospitality.",
+        "text": "Beyond creative areas, Rafael offers hosting as a complete experience. The space is designed to provide comfort, organization and well-being, always with attention to detail and care for each person received. More than a place to stay, a welcoming experience.",
+        "ctaLabel": "View Hosting"
+      }
+    ]
+  },
+  "model": {
+    "title": "Model",
+    "description": "Editorial, lifestyle, and portraits that capture the essence of contemporary elegance.",
+    "button": "View Work",
+    "gallery": [
+      {
+        "title": "Urban Style",
+        "category": "Lifestyle"
+      },
+      {
+        "title": "Classic Portrait",
+        "category": "Studio"
+      },
+      {
+        "title": "Modern Editorial",
+        "category": "Editorial"
+      },
+      {
+        "title": "Modern Elegance",
+        "category": "Commercial"
+      },
+      {
+        "title": "Urban Fashion",
+        "category": "Urban"
+      },
+      {
+        "title": "Raw Expression",
+        "category": "Outdoor"
+      }
+    ]
+  },
+  "accommodation": {
+    "title": "Experience and Comfort",
+    "description": "I offer comfortable and well-located accommodations to ensure your stay is pleasant and convenient. With attention to detail and a personal touch, I make sure every guest feels at home.",
+    "amenities": {
+      "wifi": "Free Wi-Fi",
+      "payment": "Flexible Payment",
+      "location": "Central Location",
+      "reviews": "5 Stars Reviews"
+    },
+    "differentials": {
+      "title": "Differentials",
+      "items": [
+        "Complete apartment with modern design and quality furniture",
+        "Flexible check-in and attentive communication throughout the stay",
+        "Personalized guide with local tips and recommended experiences"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "description": "Interested in working together? Whether for modeling, design, image consulting or hosting — get in touch and let's create something extraordinary.",
+    "social": {
+      "connect": "Click to connect"
+    },
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subjectLabel": "Subject",
+      "subjectDefault": "Select a subject",
+      "subjects": {
+        "model": "Modeling Work",
+        "design": "Design Project",
+        "consulting": "Image Consulting",
+        "hosting": "Hosting Reservation",
+        "other": "Other Subject"
+      },
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me more about your project or interest...",
+      "submitSending": "Sending...",
+      "submitDefault": "Send Message"
+    },
+    "toast": {
+      "success": "Message sent! I will be in touch soon.",
+      "error": "Error sending message. Please try again."
+    }
+  },
+  "aesthetic": {
+    "title": "Aesthetics & Personal Image",
+    "description": "Experience as a model and designer gave me a unique view on image and visual presentation. I offer specialized consulting for those seeking to elevate their personal and professional presence.",
+    "services": [
+      {
+        "title": "Image Consulting",
+        "description": "Strategic analysis to align your appearance with your personal and professional goals, conveying confidence."
+      },
+      {
+        "title": "Creative Direction",
+        "description": "Visual conception and art direction for photo shoots, editorials and brand projects focusing on aesthetics."
+      },
+      {
+        "title": "Styling & Production",
+        "description": "Look curation and complete fashion production to ensure impeccable aesthetics for any occasion or production."
+      },
+      {
+        "title": "Visual Positioning",
+        "description": "Aesthetic strategies to strengthen your digital presence and market authority through a coherent image."
+      },
+      {
+        "title": "Facial Analysis",
+        "description": "Detailed study of features and proportions to enhance your natural beauty with the right style choices."
+      },
+      {
+        "title": "Luxury Curation",
+        "description": "Exclusive selection of high-end pieces and accessories to compose a refined, sophisticated and timeless look."
+      }
+    ]
+  },
+  "design": {
+    "title": "Design",
+    "description": "Projects that combine sophisticated aesthetics with functionality and clear purpose.",
+    "labels": {
+      "objective": "Objective:",
+      "solution": "Solution:",
+      "result": "Result:"
+    },
+    "buttons": {
+      "viewAll": "View All Projects",
+      "viewLess": "View Less Projects"
+    },
+    "projects": [
+      {
+        "title": "Brand Identity - Luxe Studio",
+        "category": "Branding",
+        "objective": "Create a premium visual identity conveying elegance and exclusivity.",
+        "solution": "Sophisticated branding with refined typography and luxurious aesthetics.",
+        "result": "Brand positioned in the high-end segment."
+      },
+      {
+        "title": "Website - Estúdio PM",
+        "category": "Web Design",
+        "objective": "Reposition the studio digitally with a modern and sophisticated presence.",
+        "solution": "Institutional site redesign focusing on aesthetics, projects and visual experience.",
+        "result": "More valued brand, higher engagement and increased dwell time."
+      },
+      {
+        "title": "Work identity - Instalador de Portas",
+        "category": "Digital",
+        "objective": "Professionalize the brand image in the digital environment.",
+        "solution": "Consistent visual identity applied to social media content.",
+        "result": "Greater brand recognition and organic interaction growth."
+      },
+      {
+        "title": "Elenice Miranda – Nail Designer",
+        "category": "Visual Identity",
+        "objective": "Create an elegant and feminine brand for professional positioning.",
+        "solution": "Sophisticated visual identity with delicate symbol and premium typography.",
+        "result": "Strong brand well-positioned in the beauty market."
+      },
+      {
+        "title": "International Dance Day",
+        "category": "Social Media Design",
+        "objective": "Create a commemorative card to celebrate International Dance Day.",
+        "solution": "Expressive visual design focusing on movement, balance and artistic identity.",
+        "result": "Attractive content with high visual impact and organic engagement."
+      },
+      {
+        "title": "Dmdlicias Customized",
+        "category": "Branding & Digital Design",
+        "objective": "Create a striking visual identity for personalized products.",
+        "solution": "Vibrant branding with strong colors and accessible visual language.",
+        "result": "Recognizable brand and greater connection with the audience."
+      }
+    ]
+  },
+  "footer": {
+    "description": "Interested in working together? Whether for modeling, design, image consulting or hosting — get in touch and let's create something extraordinary.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "social": "Social",
+    "copyright": "Copyright © {{year}} Rafael Miranda. All rights reserved.",
+    "backToTop": "Back to top",
+    "location": "Brasília, Brazil"
+  }
+}
