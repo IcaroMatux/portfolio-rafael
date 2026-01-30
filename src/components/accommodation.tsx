@@ -167,7 +167,7 @@ const Accommodation = () => {
                                     pagination={{ clickable: true }}
                                     autoplay={{ delay: 4000, disableOnInteraction: false }}
                                     /* Fixamos um max-width menor para garantir que os cards girem sem cortar */
-                                    className="w-70! xs:w-95! <sm:w-95!></sm:w-95!> aspect-3/4 mx-auto"
+                                    className="w-70! xs:w-95! sm:w-95! lg:w-100! aspect-3/4 mx-auto"
                                 >
                                     {cards.map((img, i) => (
                                         <SwiperSlide
