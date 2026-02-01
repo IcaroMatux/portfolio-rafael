@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import firstSlidePoster from '../assets/images/rafaelimage1.jpeg';
 import secondSlidePoster from '../assets/images/rafaelimage2.jpeg';
-import aestheticSlide from '../assets/images/aestheticimage.jpg';
+import aestheticSlide from '../assets/images/aestheticimage.jpeg';
 import designSlide from '../assets/images/designimage.jpg';
 import hospedagemSlide from '../assets/images/hospedagemimage.jpeg';
 
@@ -132,7 +132,20 @@ export default function About({ autoPlay = true, delay = 6000 }: AboutProps) {
                                        
                                     </>
                                 ) : (
-                                    <img src={s.src} alt={s.title} className="w-full h-full object-cover" decoding="async" loading="lazy" />
+                                    <>
+                                        {/* Fundo Ambient (Imagem desfocada para preencher o espaço) */}
+                                        <div className="absolute inset-0 overflow-hidden">
+                                            <img src={s.src} alt="" className="w-full h-full object-cover blur-xl scale-110 opacity-50" aria-hidden="true" />
+                                        </div>
+                                        {/* Imagem Principal (Inteira e sem cortes) */}
+                                        <img 
+                                            src={s.src} 
+                                            alt={s.title} 
+                                            className="relative w-full h-full object-contain z-10 drop-shadow-2xl" 
+                                            decoding="async" 
+                                            loading="lazy" 
+                                        />
+                                    </>
                                 )}
                             </div>
                         ))}
