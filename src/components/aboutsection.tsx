@@ -75,6 +75,10 @@ export default function About({ autoPlay = true, delay = 6000 }: AboutProps) {
         });
     }, []);
 
+    useEffect(() => {
+        AOS.refresh();
+    }, [index]);
+
 
     useEffect(() => {
         if (!autoPlay) return;
