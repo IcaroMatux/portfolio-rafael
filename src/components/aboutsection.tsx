@@ -121,29 +121,40 @@ export default function About({ autoPlay = true, delay = 6000 }: AboutProps) {
                             >
                                 {s.type === "video" ? (
                                     <>
+                                        {/* Fundo Ambient para Vídeo */}
+                                        <div className="absolute inset-0 overflow-hidden">
+                                            <video
+                                                className="w-full h-full object-cover blur-2xl scale-110 opacity-60"
+                                                src={s.src}
+                                                autoPlay={i === index}
+                                                muted
+                                                loop
+                                                playsInline
+                                            />
+                                        </div>
                                         <video
-                                            className="w-full h-full object-contain hidden md:block"
+                                            className="relative w-full h-full object-contain z-10 drop-shadow-2xl hidden md:block"
                                             src={s.src}
                                             autoPlay={i === index}
                                             playsInline
                                             muted
                                             loop
                                         />
-                                       
                                     </>
                                 ) : (
                                     <>
                                         {/* Fundo Ambient (Imagem desfocada para preencher o espaço) */}
-                                        <div className="absolute inset-0 overflow-hidden">
-                                            <img src={s.src} alt="" className="w-full h-full object-cover blur-xl scale-110 opacity-50" aria-hidden="true" />
-                                        </div>
+                                        {/* <div className="absolute inset-0 overflow-hidden">
+                                            <img src={s.src}  alt="" className="w-full h-full object-cover  scale-110 " aria-hidden="true" />
+                                        </div> */}
                                         {/* Imagem Principal (Inteira e sem cortes) */}
                                         <img 
                                             src={s.src} 
                                             alt={s.title} 
-                                            className="relative w-full h-full object-contain z-10 drop-shadow-2xl" 
+                                            className="relative w-full h-full rounded-lg object-contain z-10 drop-shadow-2xl" 
                                             decoding="async" 
                                             loading="lazy" 
+                                            
                                         />
                                     </>
                                 )}
