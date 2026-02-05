@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { motion, AnimatePresence } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import firstSlidePoster from '../assets/images/rafaelimage1.jpeg';
 import secondSlidePoster from '../assets/images/rafaelimage2.jpeg';
 import aestheticSlide from '../assets/images/aestheticimage.jpeg';
@@ -13,6 +13,31 @@ interface AboutProps {
     autoPlay?: boolean;
     delay?: number;
 }
+
+// Variantes movidas para fora do componente e tipadas como Variants
+const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.15, // Efeito cascata entre os elementos
+            delayChildren: 0.2
+        }
+    },
+    exit: {
+        opacity: 0,
+        transition: { duration: 0.3 }
+    }
+};
+
+const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: "easeOut" }
+    }
+};
 
 export default function About({ autoPlay = true, delay = 6000 }: AboutProps) {
     const { t } = useTranslation();
@@ -67,18 +92,6 @@ export default function About({ autoPlay = true, delay = 6000 }: AboutProps) {
 
     const [index, setIndex] = useState(0);
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
-
-    useEffect(() => {
-        AOS.init({
-            duration: 1000, // Duração da animação em milissegundos
-            once: true,     // Se a animação deve ocorrer apenas uma vez
-        });
-    }, []);
-
-    useEffect(() => {
-        AOS.refresh();
-    }, [index]);
-
 
     useEffect(() => {
         if (!autoPlay) return;
@@ -155,10 +168,10 @@ export default function About({ autoPlay = true, delay = 6000 }: AboutProps) {
                                         <img 
                                             src={s.src} 
                                             alt={s.title} 
-                                            className="relative w-full h-full rounded-lg object-contain z-10 drop-shadow-2xl" 
-                                            decoding="async" 
-                                            loading="lazy" 
-                                            
+                                            className="relative w-full h-full rounded-lg object-contain z-10 drop-shadow-2xl"
+                                            decoding="async"
+                                            loading="lazy"
+
                                         />
                                     </>
                                 )}
@@ -171,55 +184,52 @@ export default function About({ autoPlay = true, delay = 6000 }: AboutProps) {
                 {/* Conteúdo - RIGHT */}
                 <div className='w-full md:w-1/2 h-auto relative flex items-center'>
                     <div className='w-full max-w-2xl mx-auto px-4 sm:px-6 md:px-12 py-12 md:py-24'>
-                        <div key={index} className="max-w-full sm:max-w-lg md:max-w-xl text-[#c1121f]">
-
-
-                            <h2
-                                className="font-bebas text-2xl sm:text-4xl md:text-7xl leading-snug sm:leading-tight mb-3 sm:mb-4"
-                                data-aos="zoom-in"
-                                data-aos-duration="1000"
-                                data-aos-delay="500"
+                        <AnimatePresence mode='wait'>
+                            <motion.div
+                                key={index}
+                                className="max-w-full sm:max-w-lg md:max-w-xl text-[#c1121f]"
+                                variants={containerVariants}
+                                initial="hidden"
+                                animate="visible"
+                                exit="exit"
                             >
-                                {slides[index].title}
-                            </h2>
-
-                            <h3
-                                className="font-lora text-base sm:text-2xl md:text-3xl text-[#FAFAFA] mb-3 sm:mb-4"
-                                data-aos="zoom-in-up"
-                                data-aos-duration="1000"
-                                data-aos-delay="700"
-                            >
-                                {slides[index].subtitle}
-                            </h3>
-
-                            <p
-                    
-                                className="font-lora text-sm sm:text-base md:text-lg text-[#A6A6A6] mb-4 sm:mb-6"
-                                data-aos="zoom-in-down"
-                                data-aos-duration="1000"
-                                data-aos-delay="900"
-                            >
-                                {slides[index].text}
-                            </p>
-
-                            <div
-                                   
-                                className="flex flex-wrap items-center gap-3 sm:gap-4"
-                                data-aos="fade-up"
-                                data-aos-duration="1000"
-                                data-aos-delay="1100"
-                            >
-                                <a
-                                    href={slides[index].ctaHref}
-                                    onClick={(e) => handleCtaClick(e, slides[index].ctaHref)}
-                                    className="inline-block bg-brand-deep hover:bg-brand-warm transition text-[#FAFAFA]
-                                    border  border-white/30 px-4 sm:px-6 py-2 rounded-full font-semibold text-base sm:text-xl"
+                                <motion.h2
+                                    className="font-bebas text-2xl sm:text-4xl md:text-7xl leading-snug sm:leading-tight mb-3 sm:mb-4"
+                                    variants={itemVariants}
                                 >
-                                    {slides[index].ctaLabel}
-                                </a>
+                                    {slides[index].title}
+                                </motion.h2>
 
-                            </div>
-                        </div>
+                                <motion.h3
+                                    className="font-lora text-base sm:text-2xl md:text-3xl text-[#FAFAFA] mb-3 sm:mb-4"
+                                    variants={itemVariants}
+                                >
+                                    {slides[index].subtitle}
+                                </motion.h3>
+
+                                <motion.p
+                                    className="font-lora text-sm sm:text-base md:text-lg text-[#A6A6A6] mb-4 sm:mb-6"
+                                    variants={itemVariants}
+                                >
+                                    {slides[index].text}
+                                </motion.p>
+
+                                <motion.div
+                                    className="flex flex-wrap items-center gap-3 sm:gap-4"
+                                    variants={itemVariants}
+                                >
+                                    <a
+                                        href={slides[index].ctaHref}
+                                        onClick={(e) => handleCtaClick(e, slides[index].ctaHref)}
+                                        className="inline-block bg-brand-deep hover:bg-brand-warm transition text-[#FAFAFA]
+                                    border  border-white/30 px-4 sm:px-6 py-2 rounded-full font-semibold text-base sm:text-xl"
+                                    >
+                                        {slides[index].ctaLabel}
+                                    </a>
+
+                                </motion.div>
+                            </motion.div>
+                        </AnimatePresence>
                     </div>
                 </div>
             </div>
