@@ -54,15 +54,15 @@ const Navbar = () => {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-                scrolled ? 'bg-white/20 backdrop-blur-md border-b border-border' : 'bg-transparent'
-            }`}
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-white/20 backdrop-blur-md border-b border-border' : 'bg-transparent'
+                }`}
         >
             <div className="max-w-7xl mx-auto px-6 md:px-12">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
-                    <button onClick={scrollToTop} className="font-heading text-2xl font-semibold tracking-tight text-white cursor-pointer">
-                        <span className="text-[#c1121f]">R</span>afael Miranda
+                    <button onClick={scrollToTop} className="font-heading text-2xl font-semibold tracking-tight text-white cursor-pointer flex items-center gap-1 ">
+                        <div>
+                            <span className='text-[#c1121f]'>R</span>afael Miranda </div>
                     </button>
 
 
@@ -120,9 +120,8 @@ const Navbar = () => {
                                             <button
                                                 key={lang.code}
                                                 onClick={() => changeLanguage(lang.code)}
-                                                className={`w-full text-left px-4 py-2 text-sm transition-colors hover:bg-white/5 ${
-                                                    currentLang.code === lang.code ? 'text-[#c1121f]' : 'text-[#A6A6A6]'
-                                                }`}
+                                                className={`w-full text-left px-4 py-2 text-sm transition-colors hover:bg-white/5 ${currentLang.code === lang.code ? 'text-[#c1121f]' : 'text-[#A6A6A6]'
+                                                    }`}
                                             >
                                                 {lang.label}
                                             </button>
@@ -181,9 +180,8 @@ const Navbar = () => {
                                         <button
                                             key={lang.code}
                                             onClick={() => changeLanguage(lang.code)}
-                                            className={`text-sm font-medium transition-colors ${
-                                                currentLang.code === lang.code ? 'text-[#c1121f]' : 'text-[#A6A6A6]'
-                                            }`}
+                                            className={`text-sm font-medium transition-colors ${currentLang.code === lang.code ? 'text-[#c1121f]' : 'text-[#A6A6A6]'
+                                                }`}
                                         >
                                             {lang.label}
                                         </button>

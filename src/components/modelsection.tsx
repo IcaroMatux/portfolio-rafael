@@ -20,12 +20,21 @@ const ModelSection = () => {
     const isinView = useInView(ref, { once: true, margin: "-100px" });
 
     const images = [
-        { src: model1, title: t('model.gallery.0.title'), category: t('model.gallery.0.category') },
-        { src: model2, title: t('model.gallery.1.title'), category: t('model.gallery.1.category') },
-        { src: model3, title: t('model.gallery.2.title'), category: t('model.gallery.2.category') },
-        { src: model4, title: t('model.gallery.3.title'), category: t('model.gallery.3.category') },
-        { src: model5, title: t('model.gallery.4.title'), category: t('model.gallery.4.category') },
-        { src: model6, title: t('model.gallery.5.title'), category: t('model.gallery.5.category') },
+        { src: model1, title: t('model.gallery.0.title'), category: t('model.gallery.0.category'), categoryColor: '#f7e27e', titleColor: '#FFFFFF' },
+        { src: model2, title: t('model.gallery.1.title'), category: t('model.gallery.1.category'), categoryColor: '#f7e27e', titleColor: '#FFFFFF' },
+        { src: model3, title: t('model.gallery.2.title'), category: t('model.gallery.2.category'), categoryColor: '#c1121f', titleColor: '#000000' },
+        { 
+            src: model4, 
+            title: (
+                <>
+                    <span style={{ color: '#000000' }}>Modern</span> <span style={{ color: '#ffffff' }}>Elegance</span>
+                </>
+            ), 
+            category: t('model.gallery.3.category'), categoryColor: '#c1121f', titleColor: '#000000' 
+        },
+        { src: model5, 
+            title: t('model.gallery.4.title'), category: t('model.gallery.4.category'), categoryColor: '#c1121f', titleColor: '#000000' },
+        { src: model6, title: t('model.gallery.5.title'), category: t('model.gallery.5.category'), categoryColor: '#c1121f', titleColor: '#ffffff' },
     ];
 
     return (
@@ -65,7 +74,7 @@ const ModelSection = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                     {images.map((image, index) => (
                         <motion.div
-                            key={image.title}
+                            key={index}
                             initial={{ opacity: 0, y: 30 }}
                             animate={isinView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 0.6, delay: 0.1 * index }}
@@ -73,7 +82,7 @@ const ModelSection = () => {
                         >
 
                             <img src={image.src}
-                                alt={image.title}
+                                alt={typeof image.title === 'string' ? image.title : "Modern Elegance"}
                                 loading="lazy"
                                 className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
                             />
@@ -85,12 +94,19 @@ const ModelSection = () => {
                             <div className='absolute bottom-0 left-0 p-6 w-full transform transition-transform duration-500'>
                                 <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 flex flex-col gap-2">
                                     <div className="flex items-center justify-between">
-                                        <span className='inline-block px-3 py-1 text-[10px] font-medium tracking-widest uppercase text-[#c1121f] bg-[#c1121f]/10 rounded-full border border-[#c1121f]/20 backdrop-blur-md'>
+                                        <span 
+                                            className='inline-block px-3 py-1 text-[10px] font-medium tracking-widest uppercase rounded-full border backdrop-blur-md'
+                                            style={{ 
+                                                color: image.categoryColor,
+                                                backgroundColor: `${image.categoryColor}1A`, // ~10% de opacidade
+                                                borderColor: `${image.categoryColor}33`     // ~20% de opacidade
+                                            }}
+                                        >
                                             {image.category}
                                         </span>
                                         <ArrowUpRight className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" size={20} />
                                     </div>
-                                    <h3 className='text-2xl font-heading font-medium text-white'>{image.title}</h3>
+                                    <h3 className='text-2xl font-heading font-medium' style={{ color: image.titleColor }}>{image.title}</h3>
                                 </div>
                             </div>
 
